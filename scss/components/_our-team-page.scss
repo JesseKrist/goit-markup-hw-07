@@ -1,0 +1,68 @@
+.our-team {
+  background-color: $whisper-color;
+  text-align: center;
+
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    padding-top: 30px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: $sonic_silver-color;
+    padding-top: 10px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &__item {
+    width: 270px;
+    background: $white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+  }
+
+  &__btn-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  &__btn-item {
+    margin-top: 16px;
+  }
+
+  &__btn-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: $philippine_silver-color;
+    transition: background-color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      color: $white-color;
+      background-color: $curious_blue-color;
+    }
+  }
+
+  &__btn-icon {
+    fill: currentColor;
+  }
+
+}

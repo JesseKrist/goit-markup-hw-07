@@ -1,0 +1,112 @@
+header {
+    background-color: $white-color;
+    border-bottom: 1px solid $whisper-color;
+    padding: 24px 0px 28px 0px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+    & li:nth-child(3) {
+        margin: 0px 50px 0px 50px;
+    }
+}
+
+.navbar__link {
+    color: $dark-color;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    &:hover {
+        color: $dodger_blue-color;
+    }
+
+    &:focus {
+        color: $dodger_blue-color;
+    }
+
+    &__logo {
+        margin-right: 93px;
+        font-family: Raleway;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        color: $nero-color;
+
+        &--blue {
+            color: $dodger_blue-color;
+        }
+    }
+}
+
+.header-contacts {
+    display: flex;
+
+    & li:nth-child(2) {
+        margin-left: 50px;
+    }
+
+    &__link {
+        height: 16px;
+        font-size: 14px;
+        color: $sonic_silver-color;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+
+        &:hover {
+            color: $dodger_blue-color;
+        }
+    }
+
+    &__icon {
+        &--email {
+            margin-right: 10px;
+            margin-top: 2px;
+            fill: currentColor;
+        }
+    }
+
+    &__icon {
+        &--smartphone {
+
+            margin-right: 10px;
+            fill: currentColor;
+        }
+    }
+}
+
+.not-page {
+    &::after {
+        content: "";
+        display: block;
+        width: 0px;
+        height: 4px;
+        background: $dodger_blue-color;
+        position: relative;
+        top: 29px;
+        border-radius: 2px;
+    }
+}
+
+.current-page {
+    &::after {
+        width: 100%;
+    }
+}
+
+.adjust {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
