@@ -5,18 +5,6 @@ footer {
 
 .footer {
 
-  &__section {
-    &__links {
-      margin-top: 12px;
-      margin-left: 70px;
-    }
-
-    &__form {
-      margin-top: 12px;
-      margin-left: 90px;
-    }
-  }
-
   &__link__logo {
     font-family: Raleway;
     font-weight: bold;
@@ -29,140 +17,152 @@ footer {
       color: $dodger_blue-color;
     }
   }
+}
 
-  &__address {
-    &__list li:nth-child(1) {
-      margin-top: 20px;
-    }
-
-    &__list li:nth-child(2) {
-      margin: 9px 0px 9px 0px;
-    }
-
-    &__link {
-      font-style: normal;
-      font-size: 14px;
-      line-height: 1.7;
-      letter-spacing: 0.03em;
-      color: $sonic_silver-color;
-
-      &:hover {
-        color: $dodger_blue-color;
-      }
-
-      &:focus {
-        color: $dodger_blue-color;
-      }
-
-      &--location {
-        @extend .footer__address__link;
-        color: $ghost_white-color;
-      }
-    }
-  }
-
+.footer__section {
   &__links {
-    &__title {
-      color: $white-color;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-    }
-
-    &__list {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 206px;
-      margin-top: 20px;
-    }
-
-    &__link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.1);
-      transition: background-color, 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-      &:hover {
-        background: $dodger_blue-color;
-      }
-    }
-
-    &__icon {
-      fill: $white-color;
-    }
+    margin-top: 12px;
+    margin-left: 70px;
   }
 
   &__form {
+    margin-top: 12px;
+    margin-left: 90px;
+  }
+}
+
+.footer__address {
+  &__list li:nth-child(1) {
     margin-top: 20px;
+  }
 
-    &__title {
-      @extend .footer__links__title;
+  &__list li:nth-child(2) {
+    margin: 9px 0px 9px 0px;
+  }
+
+  &__link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: $sonic_silver-color;
+
+    &:hover {
+      color: $dodger_blue-color;
     }
 
-    &__input {
-      width: 358px;
-      height: 50px;
-      background: none;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      box-sizing: border-box;
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-      border-radius: 4px;
-      font-size: 16px;
-      line-height: 1.25px;
-      letter-spacing: 0.03em;
-      color: rgba(255, 255, 255, 0.6);
-      padding-left: 16px;
-
-      &[type="email"] {
-        font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.03em;
-        color: $white-color;
-      }
-
-      &:focus {
-        outline-width: 4px;
-        outline-color: $curious_blue-color;
-      }
+    &:focus {
+      color: $dodger_blue-color;
     }
 
-    &__button {
-      width: 200px;
-      height: 50px;
-      background-color: $dodger_blue-color;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-      border-radius: 4px;
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 1.87;
-      letter-spacing: 0.06em;
-      color: $white-color;
-      border: none;
-      margin-left: 12px;
-      vertical-align: bottom;
-      cursor: pointer;
-      transition-property: background-color;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-      &:hover {
-        background-color: $curious_blue-color;
-      }
-
-      &__icon {
-        fill: currentColor;
-        vertical-align: text-top;
-      }
+    &--location {
+      @extend .footer__address__link;
+      color: $ghost_white-color;
     }
   }
+}
+
+.footer__links {
+  &__title {
+    color: $white-color;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 206px;
+    margin-top: 20px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color, 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background: $dodger_blue-color;
+    }
+  }
+
+  &__icon {
+    fill: $white-color;
+  }
+}
+
+.footer__form {
+  margin-top: 20px;
+
+  &__title {
+    @extend .footer__links__title;
+  }
+
+  &__input {
+    width: 358px;
+    height: 50px;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.25px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+
+    &[type="email"] {
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: $white-color;
+    }
+
+    &:focus {
+      outline-width: 4px;
+      outline-color: $curious_blue-color;
+    }
+  }
+}
+
+.footer__form__button {
+    width: 200px;
+    height: 50px;
+    background-color: $dodger_blue-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: $white-color;
+    border: none;
+    margin-left: 12px;
+    vertical-align: bottom;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: $curious_blue-color;
+    }
+
+    &__icon {
+      fill: currentColor;
+      vertical-align: text-top;
+    }
 }
 
 .set {

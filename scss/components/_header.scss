@@ -41,9 +41,13 @@ header {
         letter-spacing: 0.03em;
         color: $nero-color;
 
-        &--blue {
-            color: $dodger_blue-color;
-        }
+        
+    }
+}
+
+.navbar__link__logo {
+    &--blue {
+        color: $dodger_blue-color;
     }
 }
 
@@ -67,21 +71,19 @@ header {
             color: $dodger_blue-color;
         }
     }
+}
 
-    &__icon {
-        &--email {
-            margin-right: 10px;
-            margin-top: 2px;
-            fill: currentColor;
-        }
+.header-contacts__icon {
+    &--email {
+        margin-right: 10px;
+        margin-top: 2px;
+        fill: currentColor;
     }
 
-    &__icon {
-        &--smartphone {
+    &--smartphone {
 
-            margin-right: 10px;
-            fill: currentColor;
-        }
+        margin-right: 10px;
+        fill: currentColor;
     }
 }
 
@@ -102,11 +104,4 @@ header {
     &::after {
         width: 100%;
     }
-}
-
-.adjust {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
 }

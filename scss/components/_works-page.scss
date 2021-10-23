@@ -2,27 +2,6 @@
     &__section {
         padding-top: 94px;
     }
-
-    &__list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        padding-bottom: 50px;
-
-        & li:nth-child(2) {
-            margin-left: 8px;
-        }
-
-        & li:nth-child(3) {
-            margin: 0px 8px 0px 8px;
-        }
-
-        & li:nth-child(4) {
-            margin-right: 8px;
-        }
-    }
-
     &__button {
         padding: 6px 22px 6px 22px;
         font-family: inherit;
@@ -54,6 +33,26 @@
         }
     }
 
+}
+
+.btn-group__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 50px;
+
+    & li:nth-child(2) {
+        margin-left: 8px;
+    }
+
+    & li:nth-child(3) {
+        margin: 0px 8px 0px 8px;
+    }
+
+    & li:nth-child(4) {
+        margin-right: 8px;
+    }
 }
 
 .projects {
@@ -117,17 +116,6 @@
         letter-spacing: 0.03em;
         color: $sonic_silver-color;
         padding: 4px 0px 20px 24px;
-
-        &--blue {
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 1.55;
-            letter-spacing: 0.03em;
-            color: #ffffff;
-            padding: 0;
-        }
     }
 
     &__title {
@@ -138,5 +126,18 @@
         letter-spacing: 0.06em;
         color: $nero-color;
         padding: 20px 0px 0px 24px;
+    }
+}
+
+.overlay__card__text {
+    &--blue {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 1.55;
+        letter-spacing: 0.03em;
+        color: #ffffff;
+        padding: 0;
     }
 }
