@@ -109,7 +109,9 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding: 63px 24px 63px 24px;
+}
 
+.card {
     &__text {
         font-size: 16px;
         line-height: 30px;
@@ -129,7 +131,7 @@
     }
 }
 
-.overlay__card__text {
+.card__text {
     &--blue {
         font-family: Roboto;
         font-style: normal;
