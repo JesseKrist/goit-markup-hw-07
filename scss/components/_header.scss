@@ -32,7 +32,7 @@ header {
         color: $dodger_blue-color;
     }
 
-    &__logo {
+    &-logo {
         margin-right: 93px;
         font-family: Raleway;
         font-weight: bold;
@@ -45,7 +45,7 @@ header {
     }
 }
 
-.navbar__link__logo {
+.navbar__link-logo {
     &--blue {
         color: $dodger_blue-color;
     }
